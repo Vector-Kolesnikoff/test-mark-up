@@ -4,7 +4,8 @@
 
 .blocks {
   max-width: 940px;
-  margin: 0 auto;;
+  margin: 0 auto;
+  padding-top: $gap * 4;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -59,6 +60,13 @@
     font-size: 0.9rem;
     font-weight: $regular;
   }
+
+  &__videocam {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgba($color-gray, 0.8);
+  }
 }
 
 .darkened {
@@ -86,4 +94,28 @@ td {
   display: inline-block;
 }
 
+
+.footer-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__btn-end {
+
+    @include start-button;
+
+    margin: ($gap * 4) auto;
+    border-radius: 15px;
+    border: 1px solid $color-dark;
+    background: $color-white;
+    color: $color-dark;
+    transition: .2s;
+    align-self: center;
+
+    &:hover {
+      border-color: $color-gray;
+      color: rgba($color-gray, 0.5);
+    }
+  }
+}
 

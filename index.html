@@ -15,14 +15,16 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
   $( function() {
+    $( "#datepick" ).datepicker();
     $( "#datepicker" ).datepicker();
   } );
   </script>
 </head>
 <body>
-  <header class="header">
-    <div class="header-container">
 
+  <header class="header">
+
+    <div class="header-container">
       <div class="header-container__logo">
         <img src="assets/img/logo.png" alt="logo" class="logo">
       </div>
@@ -33,7 +35,6 @@
             <a href="#" class="btn-start">Start on 17-02-2016</a> 
           </div>
         </div>
-        <!-- <div class="header-container__stats"> -->
           <table class="header-container__stats-table">
             <tr>
               <td><span class="bold">870</span> posts</td>
@@ -41,11 +42,10 @@
               <td><span class="bold">112</span> following</td>
             </tr>
           </table>
-        <!-- </div> -->
         <div class="header-container__data-form">
           <form for="header-container__data-form_datep">Date</form>
           <div class="header-container__data-form_input">
-            <input type="text" id="datep1" placeholder="from"/>
+            <input type="text" id="datepick" placeholder="from"/>
             <button class="form-btn" type="submit">
               <i class="fas fa-search"></i>
             </button>
@@ -58,7 +58,6 @@
           </div>
         </div>
       </div>
-
     </div>
     
   </header>
@@ -67,7 +66,6 @@
   <main class="main">
 
     <div class="blocks">
-    
       <article class="block-item">
         <div class="item-container">
           <a href="#">
@@ -133,6 +131,7 @@
               </tr>
             </table>
             <h4 class="item-container__info">Image upload: 11-04-2016</h4>
+            <div class="item-container__videocam"><i class="material-icons">videocam</i></div>
           </a>
         </div>
       </article>
@@ -179,6 +178,7 @@
               </tr>
             </table>
             <h4 class="item-container__info">Image upload: 11-04-2016</h4>
+            <div class="item-container__videocam"><i class="material-icons">videocam</i></div>
           </a>
         </div>
       </article>
@@ -274,11 +274,13 @@
           </a>
         </div>
       </article>
+    </div>
 
+    <div class="footer-button">
+      <a href="#" class="footer-button__btn-end">LOAD MORE</a> 
     </div>
   
   </main>
 
-  
 </body>
 </html>

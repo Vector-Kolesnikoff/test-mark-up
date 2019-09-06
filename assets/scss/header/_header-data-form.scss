@@ -1,7 +1,6 @@
 .header-container__data-form {
   display: flex;
   
-
   &_datep {
     font-family: $font-main;
     font-weight: 600;
@@ -16,6 +15,7 @@
     @include sm-min {
       margin-right: $gap * 2;
       margin-left: $gap;
+      align-self: center;
     }
   }
     

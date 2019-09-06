@@ -491,14 +491,21 @@ html {
 
 @font-face {
   font-family: 'Proxima Nova';
-  src: local("Proxima Nova Regular"), local("Proxima-Nova-Regular"), url("../../libs/fonts/proxima-nova-bold/ProximaNova-Regular.woff2") format("woff2"), url("../../libs/fonts/proxima-nova-bold/ProximaNova-Regular.woff") format("woff"), url("../../libs/fonts/proxima-nova-bold/ProximaNova-Regular.ttf") format("truetype");
+  src: local("Proxima Nova Light"), local("Proxima-Nova-Light"), url("../../libs/fonts/proxima-nova-light/ProximaNova-Light.woff2") format("woff2"), url("../../libs/fonts/proxima-nova-light/ProximaNova-Light.woff") format("woff"), url("../../libs/fonts/proxima-nova-light/ProximaNova-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: local("Proxima Nova Regular"), local("Proxima-Nova-Regular"), url("../../libs/fonts/proxima-nova-regular/ProximaNova-Regular.woff2") format("woff2"), url("../../libs/fonts/proxima-nova-regular/ProximaNova-Regular.woff") format("woff"), url("../../libs/fonts/proxima-nova-regular/ProximaNova-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Proxima Nova';
-  src: local("Proxima Nova Semibold"), local("Proxima-Nova-Semibold"), url("../../libs/fonts/proxima-nova-bold/ProximaNova-Semibold.woff2") format("woff2"), url("../../libs/fonts/proxima-nova-bold/ProximaNova-Semibold.woff") format("woff"), url("../../libs/fonts/proxima-nova-bold/ProximaNova-Semibold.ttf") format("truetype");
+  src: local("Proxima Nova Semibold"), local("Proxima-Nova-Semibold"), url("../../libs/fonts/proxima-nova-semibold/ProximaNova-Semibold.woff2") format("woff2"), url("../../libs/fonts/proxima-nova-semibold/ProximaNova-Semibold.woff") format("woff"), url("../../libs/fonts/proxima-nova-semibold/ProximaNova-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
@@ -593,10 +600,10 @@ input:focus {
   margin: 0;
   padding: 5px 10px;
   outline: none;
-  border-radius: 4px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
+  border-radius: 4px;
   border: 1px solid #4090db;
   background: #ffffff;
   color: #4090db;
@@ -636,6 +643,7 @@ input:focus {
 .blocks {
   max-width: 940px;
   margin: 0 auto;
+  padding-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -681,6 +689,13 @@ input:focus {
   font-weight: 400;
 }
 
+.item-container__videocam {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: rgba(204, 204, 204, 0.8);
+}
+
 .darkened {
   position: relative;
 }
@@ -705,6 +720,43 @@ td {
   display: inline-block;
 }
 
+.footer-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-button__btn-end {
+  font-size: 16px;
+  margin: 0;
+  padding: 5px 10px;
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  margin: 60px auto;
+  border-radius: 15px;
+  border: 1px solid #000000;
+  background: #ffffff;
+  color: #000000;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.footer-button__btn-end:hover {
+  border-color: #cccccc;
+  color: rgba(204, 204, 204, 0.5);
+}
+
 @media (min-width: 576px) {
   .header-container__data-form_datep {
     margin-right: 30px;
@@ -712,6 +764,8 @@ td {
   .header-container__data-form_input:nth-of-type(1) {
     margin-right: 30px;
     margin-left: 15px;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .header-container__content-heading_title {
     -ms-flex-item-align: center;
