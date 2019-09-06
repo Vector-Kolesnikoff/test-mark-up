@@ -1,0 +1,10 @@
+.header-container__logo {
+
+  @include md-xx {
+    margin: 0 auto;;
+  }
+
+  @include xx {
+    margin: 0 auto;;
+  }
+}

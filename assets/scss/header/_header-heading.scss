@@ -1,0 +1,55 @@
+
+.header-container__content-heading {
+  display: flex;
+  width: 100%;
+
+  @include sm-xx {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include xx {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_title {
+
+    @include sm-min {
+      align-self: center;
+      margin-right: $gap * 2;
+    }
+  }
+
+  &_button {
+    
+    @include sm-min {
+    align-self: center;
+    }
+
+    @include sm-xx {
+    margin-bottom: $gap * 2;
+    }
+
+    @include xx {
+      margin-bottom: $gap * 2;
+      }
+  }
+}
+.btn-start {
+
+  @include start-button;
+
+  border: 1px solid $color-blue;
+  background: $color-white;
+  color: $color-blue;
+  transition: .2s;
+  align-self: center;
+
+  &:hover {
+    border-color: $color-gray;
+    color: rgba($color-dark, 0.5);
+  }
+}

@@ -1,0 +1,68 @@
+.header-container__data-form {
+  display: flex;
+  
+
+  &_datep {
+    font-family: $font-main;
+    font-weight: 600;
+
+    @include sm-min {
+      margin-right: $gap * 2;
+    }
+  }
+
+  &_input:nth-of-type(1) {
+
+    @include sm-min {
+      margin-right: $gap * 2;
+      margin-left: $gap;
+    }
+  }
+    
+
+  @include sm-xx {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: $gap;
+  }
+
+  @include xx {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: $gap;
+  }
+}
+
+input {
+  border: 1px solid $color-gray;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 2px 4px;
+  width: 100%;
+  text-indent: 4px;
+
+  &::placeholder {
+    color: rgbs($color-dark, 0.5);
+  }
+
+  &:focus {
+    background: rgba(255, 255, 255, .5);
+    transition: .2s;
+  }
+}
+  
+.form-btn {
+  position: absolute;
+  padding: 5px 7px;
+  top: 1px;
+  bottom: 1px;
+  right: 1px;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  border-left: 1px solid rgba(238, 238, 238, 0.1);
+  background-color: transparent;
+  cursor: pointer;
+}

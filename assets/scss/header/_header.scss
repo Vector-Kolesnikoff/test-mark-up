@@ -1,0 +1,19 @@
+.header {
+  background-color: $color-white;
+}
+
+.header-container {
+  margin: 0 auto;
+  display: flex;
+  max-width: 800px;
+  
+  @include md-xx {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @include xx {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

@@ -7,10 +7,63 @@
   <title>TEST</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    rel="stylesheet">
+  <link rel="stylesheet" href="libs/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
 </head>
 <body>
-  <header></header>
+  <header class="header">
+    <div class="header-container">
+
+      <div class="header-container__logo">
+        <img src="assets/img/logo.png" alt="logo" class="logo">
+      </div>
+      <div class="header-container__content">
+        <div class="header-container__content-heading">
+          <h1 class="header-container__content-heading_title">monblanproject</h1>
+          <div class="header-container__content-heading_button">
+            <a href="#" class="btn-start">Start on 17-02-2016</a> 
+          </div>
+        </div>
+        <!-- <div class="header-container__stats"> -->
+          <table class="header-container__stats-table">
+            <tr>
+              <td><span class="bold">870</span> posts</td>
+              <td>11,787 followers</td>
+              <td><span class="bold">112</span> following</td>
+            </tr>
+          </table>
+        <!-- </div> -->
+        <div class="header-container__data-form">
+          <form for="header-container__data-form_datep">Date</form>
+          <div class="header-container__data-form_input">
+            <input type="text" id="datep1" placeholder="from"/>
+            <button class="form-btn" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <div class="header-container__data-form_input">
+            <input type="text" id="datepicker" placeholder="to"/>
+            <button class="form-btn" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+  </header>
+
+
   <main class="main">
 
     <div class="blocks">
@@ -21,7 +74,7 @@
             <div class="item-container__img darkened">
               <img src="assets/img/block_1.png" alt="Image" class="item-img">
             </div>
-            <table class="item-container__callbacks">
+            <table class="item-container__feedbacks">
               <tr>
                 <td>Today</td>
                 <td><i class="material-icons md-17">favorite</i><span class="bold">128</span></td>
@@ -44,7 +97,7 @@
             <div class="item-container__img darkened">
               <img src="assets/img/block_2.png" alt="Image" class="item-img">
             </div>
-            <table class="item-container__callbacks">
+            <table class="item-container__feedbacks">
               <tr>
                 <td>Today</td>
                 <td><i class="material-icons md-17">favorite</i><span class="bold">12,800</span></td>
@@ -67,7 +120,7 @@
             <div class="item-container__img darkened">
               <img src="assets/img/block_3.png" alt="Image" class="item-img">
             </div>
-            <table class="item-container__callbacks">
+            <table class="item-container__feedbacks">
               <tr>
                 <td>Today</td>
                 <td><i class="material-icons md-17">favorite</i><span class="bold">128</span></td>
@@ -90,7 +143,7 @@
             <div class="item-container__img darkened">
               <img src="assets/img/block_4.png" alt="Image" class="item-img">
             </div>
-            <table class="item-container__callbacks">
+            <table class="item-container__feedbacks">
               <tr>
                 <td>Today</td>
                 <td><i class="material-icons md-17">favorite</i><span class="bold">128</span></td>
@@ -113,7 +166,7 @@
             <div class="item-container__img darkened">
               <img src="assets/img/block_5.png" alt="Image" class="item-img">
             </div>
-            <table class="item-container__callbacks">
+            <table class="item-container__feedbacks">
               <tr>
                 <td>Today</td>
                 <td><i class="material-icons md-17">play_arrow</i><span class="bold">128</span></td>
@@ -136,7 +189,7 @@
             <div class="item-container__img darkened">
               <img src="assets/img/block_6.png" alt="Image" class="item-img">
             </div>
-            <table class="item-container__callbacks">
+            <table class="item-container__feedbacks">
               <tr>
                 <td>Today</td>
                 <td><i class="material-icons md-17">favorite</i><span class="bold">128</span></td>
@@ -159,7 +212,7 @@
             <div class="item-container__img darkened">
               <img src="assets/img/block_7.png" alt="Image" class="item-img">
             </div>
-            <table class="item-container__callbacks">
+            <table class="item-container__feedbacks">
               <tr>
                 <td>Today</td>
                 <td><i class="material-icons md-17">favorite</i><span class="bold">128</span></td>
@@ -182,7 +235,7 @@
             <div class="item-container__img darkened">
               <img src="assets/img/block_8.png" alt="Image" class="item-img">
             </div>
-            <table class="item-container__callbacks">
+            <table class="item-container__feedbacks">
               <tr>
                 <td>Today</td>
                 <td><i class="material-icons md-17">favorite</i><span class="bold">128</span></td>
@@ -205,7 +258,7 @@
             <div class="item-container__img darkened">
               <img src="assets/img/block_9.png" alt="Image" class="item-img">
             </div>
-            <table class="item-container__callbacks">
+            <table class="item-container__feedbacks">
               <tr>
                 <td>Today</td>
                 <td><i class="material-icons md-17">favorite</i><span class="bold">128</span></td>
@@ -225,5 +278,7 @@
     </div>
   
   </main>
+
+  
 </body>
 </html>

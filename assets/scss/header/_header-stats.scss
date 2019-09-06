@@ -1,0 +1,17 @@
+.header-container__stats-table {
+  
+  margin-bottom: $gap * 2;
+  font-size: 1.0rem;
+
+  @include sm-min {
+    max-width: 90%;
+  }
+
+  @include sm-xx {
+    margin: $gap;
+  }
+
+  @include xx {
+    margin: $gap;
+  }
+}

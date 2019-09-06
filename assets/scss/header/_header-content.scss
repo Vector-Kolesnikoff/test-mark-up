@@ -1,0 +1,12 @@
+.header-container__content {
+  display: flex;
+  flex-direction: column;
+
+  @include md-min {
+    margin-left: 100px;
+  }
+  
+  @include md-xx {
+    margin: 0 auto;
+  }
+}
