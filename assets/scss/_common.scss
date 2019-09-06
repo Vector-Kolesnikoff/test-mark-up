@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: $font-main;
+}
+
+.item-img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+.material-icons.md-17 { 
+  font-size: 17px;
+ }
